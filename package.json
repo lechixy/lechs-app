@@ -1,0 +1,17 @@
+{
+  "name": "lechs_app",
+  "version": "1.0.0",
+  "author": "lechixy",
+  "main": "./src/main.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prod": "electron ./dist/src/main.js",
+    "start": "cls && IF exist dist (rmdir /s /q dist && yarn build && yarn prod) ELSE (yarn build && yarn prod)"
+  },
+  "devDependencies": {
+    "electron": "^24.0.0",
+    "typescript": "^5.0.4"
+  },
+  "license": "ISC"
+}
